@@ -27,11 +27,12 @@
         /* Tools */
         
         .rounded-borders {
-            border-radius: 0.5em;
+            border-radius: 1rem;
         }
         
         html {
             box-sizing: border-box;
+            font-size: 62.5%;
         }
         
         *,
@@ -40,39 +41,44 @@
             box-sizing: inherit;
         }
         
+        h1,
         p {
+            text-align: center;
+        }
+        
+        p {
+            color: var(--Grayish-blue);
             padding: 0.1rem;
+            font-size: 1.5rem;
         }
         
         body {
-            background-color: var(--White);
-            background-image: url(http://cdn.backgroundhost.com/backgrounds/subtlepatterns/bright_squares.png);
+            background-color: hsl(212, 45%, 89%);
             min-height: 100vh;
             font-family: var(--Default-font);
-            text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         
         img {
-            width: 100%;
+            max-width: 100%;
         }
         
-        .container {
+        .main {
             background-color: var(--Light-gray);
-            width: 1440px;
-            padding: 100px 0;
+            width: 144rem;
+            padding: 6rem 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            box-shadow: -11px 10px 15px -3px rgba(0, 0, 0, 0.1);
+            box-shadow: -1.1rem 1rem 1.5rem -0.3rem rgba(0, 0, 0, 0.1);
         }
         
-        @media (max-width: 375px) {
-            .container {
-                padding: 130px 2px;
-                width: 375px;
+        @media (max-width: 37.5rem) {
+            .main {
+                padding: 13rem 0.2rem;
+                width: 37.5rem;
             }
         }
         
@@ -80,43 +86,41 @@
             background-color: var(--White);
             margin: 0 auto;
             text-align: center;
-            padding: 20px;
-            width: 265px;
-            margin-bottom: 2rem;
+            padding: 1rem;
+            max-width: 25rem;
         }
         
-        .bold-font {
-            font-size: 1.2rem;
-            font-weight: 700;
-        }
-        
-        .attribution {
-            font-size: 11px;
+        footer {
+            margin-top: 3rem;
+            font-size: 1.5rem;
             text-align: center;
         }
         
-        .attribution a {
+        footer a {
             color: hsl(228, 45%, 44%);
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <div class="main">
         <div class="card rounded-borders">
             <img class="imgage rounded-borders" src="images/image-qr-code.png" alt="QR code image">
-            <p class="bold-font">
+            <h1>
                 Improve your front-end skills by building projects
-            </p>
+            </h1>
             <p class="normal-font">
                 Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
             </p>
         </div>
-        Improve your front-end skills by building projects Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+        <footer>
+            Improve your front-end skills by building projects Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
 
-        <div class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Carlos Munera</a>.
-        </div>
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Carlos Munera</a>.
+            </div>
+        </footer>
+
     </div>
 </body>
 
