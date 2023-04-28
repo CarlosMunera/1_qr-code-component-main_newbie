@@ -12,7 +12,7 @@ Solución para el reto [QR code component challenge on Frontend Mentor](https://
 
 ### Links
 
-- URL de la solución: [Solución](https://carlosmunera.github.io/1_qr-code-component-main_newbie/)
+- URL de la solución: [Solución.](https://carlosmunera.github.io/1_qr-code-component-main_newbie/)
 
 
 
